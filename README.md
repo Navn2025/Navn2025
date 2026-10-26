@@ -59,8 +59,4 @@ My experience includes a software engineering internship focused on backend serv
 
 **Learn deeply. Build relentlessly.**
 
-<sub>Charts refresh daily. Activity uses a three-week average and a capped display scale; the contribution calendar retains exact counts. Language shares count non-fork repositories.</sub>
-
-<sub>Inspired by <a href="https://github.com/mithun50/ascii-profile-kit">ascii-profile-kit</a> · Real brand marks from <a href="https://github.com/devicons/devicon">Devicon</a> and <a href="https://github.com/simple-icons/simple-icons">Simple Icons</a></sub>
-
 </div>
