@@ -7,6 +7,7 @@
   "activity_chart": {"window_weeks": 3, "cap_percentile": 0.90, "minimum_cap": 20, "maximum_cap": 200},
   "name": "Navneet Tripathi",
   "location": "Indore, India",
+  "email": "navneet.tripathi.109@gmail.com",
   "tagline": "Learn deeply. Build relentlessly.",
   "summary": "I'm Navneet Tripathi, an Information Technology undergraduate at SGSITS, Indore, focused on AI engineering, backend systems, and full-stack development. I build applications that connect secure APIs, reliable data systems, and intelligent workflows, taking ideas from an initial prototype to deployed software.",
   "summary_details": [

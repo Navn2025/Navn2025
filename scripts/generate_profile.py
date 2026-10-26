@@ -278,11 +278,13 @@ def social_badge(slug):
         'github':('GitHub',128,'#18212c','#3b4654','#e6edf3'),
         'linkedin':('LinkedIn',144,'#0a66c2','#3085da','#ffffff'),
         'leetcode':('LeetCode',148,'#25221b','#795522','#ffd08b'),
+        'email':(CFG['email'],320,'#2d2029','#79455c','#ffc0d3'),
     }
     name,width,background,border,ink = styles[slug]
+    mark = ('<g transform="translate(12 9)" fill="none" stroke="#ffacc9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="20" height="16" rx="3"/><path d="m2 5 9 7 9-7"/></g>'
+            if slug=='email' else logo(slug,12,9,22,'social-'+slug))
     body = (f'<rect x=".5" y=".5" width="{width-1}" height="39" rx="7" fill="{background}" stroke="{border}"/>'
-            +logo(slug,12,9,22,'social-'+slug)
-            +label(45,25,name,14,ink,'font-weight="bold"'))
+            +mark+label(45,25,name,13 if slug=='email' else 14,ink,'font-weight="bold"'))
     return document(width,40,name,body)
 
 
@@ -301,7 +303,7 @@ def main():
         (OUT / name).write_text(document(1000, 540, "Navneet Tripathi — ASCII portrait and neofetch profile", body), encoding="utf-8")
     (OUT / "header.svg").write_text(banner(), encoding="utf-8")
     (OUT / "header-mobile.svg").write_text(banner(540),encoding="utf-8")
-    for network in ['github','linkedin','leetcode']:
+    for network in ['github','linkedin','leetcode','email']:
         (OUT/f'social-{network}.svg').write_text(social_badge(network),encoding='utf-8')
     (OUT / "tech-stack.svg").write_text(tech_stack(), encoding="utf-8")
     (OUT / "tech-stack-mobile.svg").write_text(tech_stack("software",6,492), encoding="utf-8")

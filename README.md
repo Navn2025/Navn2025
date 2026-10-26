@@ -8,6 +8,7 @@
 <a href="https://github.com/Navn2025"><img src="public/profile/social-github.svg?v=20261026-r22" width="128" height="40" alt="GitHub" /></a>
 <a href="https://linkedin.com/in/navneet-tripathi-38b387340"><img src="public/profile/social-linkedin.svg?v=20261026-r22" width="144" height="40" alt="LinkedIn" /></a>
 <a href="https://leetcode.com/u/navneettripathi2567/"><img src="public/profile/social-leetcode.svg?v=20261026-r22" width="148" height="40" alt="LeetCode" /></a>
+<a href="mailto:navneet.tripathi.109@gmail.com"><img src="public/profile/social-email.svg?v=20261026-r22" width="320" height="40" alt="Email navneet.tripathi.109@gmail.com" /></a>
 
 </div>
 
