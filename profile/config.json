@@ -1,7 +1,7 @@
 {
   "username": "Navn2025",
   "photo_source": "source-photo-soft-background.png",
-  "asset_version": "20261026-r22",
+  "asset_version": "20261026-r23",
   "portrait_padding": 0.12,
   "ascii_background": "dark-dotted",
   "activity_chart": {"window_weeks": 3, "cap_percentile": 0.90, "minimum_cap": 20, "maximum_cap": 200},

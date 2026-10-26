@@ -278,7 +278,7 @@ def social_badge(slug):
         'github':('GitHub',128,'#18212c','#3b4654','#e6edf3'),
         'linkedin':('LinkedIn',144,'#0a66c2','#3085da','#ffffff'),
         'leetcode':('LeetCode',148,'#25221b','#795522','#ffd08b'),
-        'email':(CFG['email'],320,'#2d2029','#79455c','#ffc0d3'),
+        'email':('Email',128,'#2d2029','#79455c','#ffc0d3'),
     }
     name,width,background,border,ink = styles[slug]
     mark = ('<g transform="translate(12 9)" fill="none" stroke="#ffacc9" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="20" height="16" rx="3"/><path d="m2 5 9 7 9-7"/></g>'
