@@ -2,10 +2,18 @@ from datetime import date
 import unittest
 import xml.etree.ElementTree as ET
 
-from update_insights import summarize, weekly_values, language_card, svg, activity_series, activity_chart
+from update_insights import summarize, weekly_values, language_card, svg, activity_series, activity_chart, refresh_chart_links
 
 
 class InsightsTests(unittest.TestCase):
+    def test_each_refresh_replaces_chart_cache_keys_only(self):
+        original = '<img src="public/profile/contributions.svg?v=old"/><source srcset="public/profile/insights-mobile.svg"/><img src="public/profile/portrait.svg?v=keep"/>'
+        updated = refresh_chart_links(original,"fresh")
+        self.assertIn('contributions.svg?v=fresh"',updated)
+        self.assertIn('insights-mobile.svg?v=fresh"',updated)
+        self.assertIn('portrait.svg?v=keep"',updated)
+        self.assertEqual(refresh_chart_links(updated,"fresh"),updated)
+
     def test_fork_stars_and_languages_are_excluded(self):
         repos = [{"fork":False,"language":"Python","stargazers_count":3,"forks_count":2},
                  {"fork":False,"language":None,"stargazers_count":1,"forks_count":0},

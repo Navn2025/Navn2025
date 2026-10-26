@@ -2,7 +2,7 @@
 from datetime import date, timedelta
 import unittest
 
-from update_contributions import parse_calendar, render, statistics
+from update_contributions import parse_calendar, render, statistics, refresh_label
 
 TODAY = date(2026, 10, 26)
 
@@ -23,6 +23,16 @@ def calendar(counts=None, missing_tip=None, missing_day=None, future=False):
 
 
 class CalendarTests(unittest.TestCase):
+    def test_refresh_time_uses_ist_across_midnight_without_changing_calendar(self):
+        days = parse_calendar(calendar({TODAY: 5}), TODAY)
+        data = {"username":"Navn2025", "generated_at":str(TODAY),
+                "refreshed_at":"2026-10-26T19:15:00+00:00", "days":days,"stats":statistics(days,TODAY)}
+        output = render(data)
+        self.assertIn("refreshed 2026-10-27 00:45 IST",output)
+        self.assertIn("2026-10-26: 5 contributions",output)
+        self.assertEqual(days[-1]["date"],str(TODAY))
+        self.assertEqual(refresh_label({"generated_at":str(TODAY)}),str(TODAY))
+
     def test_counts_are_joined_by_id_not_dom_order(self):
         days = parse_calendar(calendar({TODAY: 1234}), TODAY)
         self.assertEqual(len(days), 365)

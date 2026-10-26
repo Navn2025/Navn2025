@@ -13,6 +13,7 @@ import json
 import os
 import re
 import math
+from update_contributions import refresh_label
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "public" / "profile"
@@ -140,7 +141,7 @@ def activity_chart(calendar, settings=None):
         x = points[i][0]
         body.append(text(x,215,weeks[i][0].strftime("%b %d"),10,MUTED,'text-anchor="middle"'))
     body.append(text(24,236,"Smoothed display; amber points exceed the cap. Tooltips retain actual weekly counts.",9,MUTED))
-    body.append(text(976,236,f'Refreshed {calendar["generated_at"]}',9,MUTED,'text-anchor="end"'))
+    body.append(text(976,236,f'Refreshed {refresh_label(calendar)}',9,MUTED,'text-anchor="end"'))
     return svg(1000,250,"Navn2025's real weekly contribution activity", "".join(body))
 
 
@@ -150,6 +151,12 @@ def api(path):
         headers["Authorization"] = "Bearer "+os.environ["GH_TOKEN"]
     with urlopen(Request("https://api.github.com/"+path,headers=headers),timeout=30) as response:
         return json.load(response)
+
+
+def refresh_chart_links(readme, stamp):
+    """Change chart image URLs on each fetch so cached READMEs request new art."""
+    return re.sub(r'(public/profile/(?:contributions|activity|insights|insights-mobile)\.svg)(?:\?v=[^"\s]+)?',
+                  lambda match: match[1]+"?v="+stamp, readme)
 
 
 def main():
@@ -175,19 +182,22 @@ def main():
         raise ValueError("Incomplete public repository response; keep previous charts")
     calendar = json.loads((OUT/"contributions.json").read_text(encoding="utf-8"))
     stats = summarize(profile,repos)
-    refreshed = datetime.now(timezone.utc).date().isoformat()
-    stats_body, streak_body, language_body = stats_card(stats,refreshed),streak_card(calendar),language_card(stats)
+    refreshed = datetime.now(timezone.utc)
+    metadata = {"generated_at":refreshed.date().isoformat(),"refreshed_at":refreshed.isoformat(timespec="seconds")}
+    stats_body, streak_body, language_body = stats_card(stats,refresh_label(metadata)),streak_card(calendar),language_card(stats)
     combined = stats_body+'<g transform="translate(0 190)">'+streak_body+'</g><g transform="translate(508 0)">'+language_body+'</g>'
     mobile = stats_body+'<g transform="translate(0 190)">'+streak_body+'</g><g transform="translate(0 376)">'+language_body+'</g>'
     files = {"insights.svg":svg(1000,360,"Navn2025's GitHub stats, streaks and primary languages",combined),
              "insights-mobile.svg":svg(492,736,"Navn2025's GitHub insights stacked for mobile",mobile),
              "activity.svg":activity_chart(calendar,config.get("activity_chart")),
-             "insights.json":json.dumps({"username":user,"generated_at":refreshed,**stats},indent=2)+"\n"}
+             "insights.json":json.dumps({"username":user,**metadata,**stats},indent=2)+"\n"}
     for name,content in files.items():
         target = OUT/name
         temp = target.with_suffix(target.suffix+".tmp")
         temp.write_text(content,encoding="utf-8")
         temp.replace(target)
+    readme = ROOT/"README.md"
+    readme.write_text(refresh_chart_links(readme.read_text(encoding="utf-8"), refreshed.strftime("%Y%m%dT%H%M%SZ")),encoding="utf-8")
     print(f"Updated GitHub insights: {stats}")
 
 

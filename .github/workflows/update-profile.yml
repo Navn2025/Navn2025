@@ -44,7 +44,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/profile/contributions.json public/profile/contributions.svg public/profile/insights.json public/profile/insights.svg public/profile/insights-mobile.svg public/profile/activity.svg
+          git add README.md public/profile/contributions.json public/profile/contributions.svg public/profile/insights.json public/profile/insights.svg public/profile/insights-mobile.svg public/profile/activity.svg
           if ! git diff --cached --quiet; then
             git commit -m 'chore: refresh contribution graph'
             git push

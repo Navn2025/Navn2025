@@ -19,6 +19,16 @@ OUT = ROOT / "public" / "profile"
 COLORS = ["#161b22", "#06452d", "#087443", "#16b86a", "#00ff87"]
 
 
+def refresh_label(data):
+    """Show when data was fetched without relabeling GitHub's UTC calendar days."""
+    if not data.get("refreshed_at"):
+        return data["generated_at"]
+    instant = datetime.fromisoformat(data["refreshed_at"])
+    if instant.tzinfo is None:
+        raise ValueError("Refresh timestamp must include a timezone")
+    return instant.astimezone(timezone(timedelta(hours=5, minutes=30))).strftime("%Y-%m-%d %H:%M IST")
+
+
 def parse_calendar(markup, today=None):
     today = today or datetime.now(timezone.utc).date()
     soup = BeautifulSoup(markup, "html.parser")
@@ -79,12 +89,13 @@ def statistics(days, today=None):
 
 def render(data):
     days, stats = data["days"], data["stats"]
+    refreshed = refresh_label(data)
     start = date.fromisoformat(days[0]["date"])
     start -= timedelta(days=(start.weekday()+1) % 7)
     parts = ['<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="300" viewBox="0 0 1000 300" '
              'role="img" aria-labelledby="title desc" font-family="Consolas, Liberation Mono, Menlo, monospace">',
              f'<title id="title">{escape(data["username"])} — real GitHub contributions</title>',
-             f'<desc id="desc">{stats["total"]} contributions from {days[0]["date"]} to {days[-1]["date"]}. Refreshed {data["generated_at"]}.</desc>',
+             f'<desc id="desc">{stats["total"]} contributions from {days[0]["date"]} to {days[-1]["date"]} (UTC calendar). Refreshed {refreshed}.</desc>',
              '<rect x=".5" y=".5" width="999" height="299" rx="12" fill="#0d1117" stroke="#30363d"/>']
 
     def text(x, y, content, fill="#8b949e", size=12, extra=""):
@@ -117,7 +128,7 @@ def render(data):
                                       ("CURRENT STREAK",f'{stats["current_streak"]}d'),("LONGEST STREAK",f'{stats["longest_streak"]}d')]):
         x = 24+i*244
         parts += [text(x, 241, value, "#d7e0e8", 20), text(x+80, 240, name, size=10)]
-    parts.append(text(24, 278, f'{days[0]["date"]} to {days[-1]["date"]} / refreshed {data["generated_at"]}', size=10))
+    parts.append(text(24, 278, f'UTC calendar: {days[0]["date"]} to {days[-1]["date"]} / refreshed {refreshed}', size=10))
     parts.append(text(815, 278, "Less", size=10))
     for i, color in enumerate(COLORS):
         parts.append(f'<rect x="{850+i*17}" y="268" width="12" height="12" rx="2" fill="{color}"/>')
@@ -148,8 +159,9 @@ def main():
     config = json.loads((ROOT / "profile" / "config.json").read_text(encoding="utf-8"))
     markup = args.html.read_text(encoding="utf-8") if args.html else fetch(config["username"])
     days = parse_calendar(markup)
-    # A date stamp changes once per UTC day, avoiding noisy same-day commits.
-    data = {"username": config["username"], "generated_at": datetime.now(timezone.utc).date().isoformat(),
+    refreshed = datetime.now(timezone.utc)
+    data = {"username": config["username"], "generated_at": refreshed.date().isoformat(),
+            "refreshed_at": refreshed.isoformat(timespec="seconds"),
             "stats": statistics(days), "days": days}
     svg = render(data)
     OUT.mkdir(parents=True, exist_ok=True)
