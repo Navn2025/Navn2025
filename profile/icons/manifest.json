@@ -1,0 +1,195 @@
+[
+  {
+    "slug": "python",
+    "label": "Python",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/python/python-original.svg"
+  },
+  {
+    "slug": "javascript",
+    "label": "JavaScript",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/javascript/javascript-original.svg"
+  },
+  {
+    "slug": "typescript",
+    "label": "TypeScript",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/typescript/typescript-original.svg"
+  },
+  {
+    "slug": "java",
+    "label": "Java",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/java/java-original.svg"
+  },
+  {
+    "slug": "react",
+    "label": "React",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/react/react-original.svg"
+  },
+  {
+    "slug": "nextjs",
+    "label": "Next.js",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "slug": "nodejs",
+    "label": "Node.js",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "slug": "express",
+    "label": "Express",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/express/express-original.svg"
+  },
+  {
+    "slug": "fastapi",
+    "label": "FastAPI",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/fastapi/fastapi-original.svg"
+  },
+  {
+    "slug": "postgresql",
+    "label": "PostgreSQL",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "slug": "mysql",
+    "label": "MySQL",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/mysql/mysql-original.svg"
+  },
+  {
+    "slug": "redis",
+    "label": "Redis",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/redis/redis-original.svg"
+  },
+  {
+    "slug": "mongodb",
+    "label": "MongoDB",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    "slug": "docker",
+    "label": "Docker",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/docker/docker-original.svg"
+  },
+  {
+    "slug": "git",
+    "label": "Git",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/git/git-original.svg"
+  },
+  {
+    "slug": "github",
+    "label": "GitHub",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/github/github-original.svg"
+  },
+  {
+    "slug": "linkedin",
+    "label": "LinkedIn",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/linkedin/linkedin-original.svg"
+  },
+  {
+    "slug": "linux",
+    "label": "Linux",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/linux/linux-original.svg"
+  },
+  {
+    "slug": "tailwindcss",
+    "label": "Tailwind CSS",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "slug": "aws",
+    "label": "AWS",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+  },
+  {
+    "slug": "githubactions",
+    "label": "GitHub Actions",
+    "source": "https://raw.githubusercontent.com/devicons/devicon/v2.17.0/icons/githubactions/githubactions-original.svg"
+  },
+  {
+    "slug": "langchain",
+    "label": "LangChain",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/langchain.svg",
+    "brand_source": "https://www.langchain.com/langchain",
+    "color": "#7FC8FF",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "langgraph",
+    "label": "LangGraph",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/langgraph.svg",
+    "brand_source": "https://www.langchain.com/langgraph",
+    "color": "#7FC8FF",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "modelcontextprotocol",
+    "label": "MCP",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/modelcontextprotocol.svg",
+    "brand_source": "https://github.com/modelcontextprotocol/docs/blob/573dc60c2e7aab2605b29d0bf27194aa7b02e4fb/logo/light.svg",
+    "color": "#000000",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "huggingface",
+    "label": "Hugging Face",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/huggingface.svg",
+    "brand_source": "https://huggingface.co/brand",
+    "color": "#FFD21E",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "ollama",
+    "label": "Ollama",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/ollama.svg",
+    "brand_source": "https://github.com/ollama/ollama/issues/2152#issuecomment-1905286922",
+    "color": "#000000",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "googlegemini",
+    "label": "Gemini",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/googlegemini.svg",
+    "brand_source": "https://gemini.google.com",
+    "color": "#8E75B2",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "scikitlearn",
+    "label": "scikit-learn",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/scikitlearn.svg",
+    "brand_source": "https://github.com/scikit-learn/scikit-learn/blob/c5ef2e985c13119001aa697e446ebb3dbcb326e5/doc/logos/scikit-learn-logo.svg",
+    "color": "#F7931E",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "numpy",
+    "label": "NumPy",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/numpy.svg",
+    "brand_source": "https://numpy.org/press-kit/",
+    "color": "#013243",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "pandas",
+    "label": "Pandas",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/pandas.svg",
+    "brand_source": "https://pandas.pydata.org/about/citing.html",
+    "color": "#150458",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "opencv",
+    "label": "OpenCV",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/opencv.svg",
+    "brand_source": "https://opencv.org/resources/media-kit/",
+    "color": "#5C3EE8",
+    "library": "Simple Icons"
+  },
+  {
+    "slug": "leetcode",
+    "label": "LeetCode",
+    "source": "https://raw.githubusercontent.com/simple-icons/simple-icons/90646e4bf7f3b89df6c37e65baf3e7bc759a517c/icons/leetcode.svg",
+    "brand_source": "https://leetcode.com/store",
+    "color": "#FFA116",
+    "library": "Simple Icons"
+  }
+]

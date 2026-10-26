@@ -1,0 +1,37 @@
+{
+  "username": "Navn2025",
+  "photo_source": "source-photo-soft-background.png",
+  "asset_version": "20261026-r22",
+  "portrait_padding": 0.12,
+  "ascii_background": "dark-dotted",
+  "activity_chart": {"window_weeks": 3, "cap_percentile": 0.90, "minimum_cap": 20, "maximum_cap": 200},
+  "name": "Navneet Tripathi",
+  "location": "Indore, India",
+  "tagline": "Learn deeply. Build relentlessly.",
+  "summary": "I'm Navneet Tripathi, an Information Technology undergraduate at SGSITS, Indore, focused on AI engineering, backend systems, and full-stack development. I build applications that connect secure APIs, reliable data systems, and intelligent workflows, taking ideas from an initial prototype to deployed software.",
+  "summary_details": [
+    "My backend work includes FastAPI, Node.js, Express, PostgreSQL, MySQL, and Redis, with experience in authentication, role-based access, caching, payments, and real-time communication. On the AI side, I develop agent workflows with LangGraph and LangChain, retrieval-augmented generation, MCP integrations, and tool calling. I also explore LLM evaluation, guardrails, observability, and the practical trade-offs between quality, latency, and cost.",
+    "My experience includes a software engineering internship focused on backend services and computer-vision research through an MPCST-funded project at SGSITS, using OpenCV and MediaPipe for real-time feedback. My projects include AutoBot, the SGSITS college platform, and EDU-AI. Alongside building, I continue strengthening my foundations in data structures, system design, and machine learning."
+  ],
+  "experience": "MPCST-funded AI research at SGSITS · Software engineering internship",
+  "linkedin": "https://linkedin.com/in/navneet-tripathi-38b387340",
+  "leetcode": "https://leetcode.com/u/navneettripathi2567/",
+  "roles": ["AI Engineer", "Backend Engineer", "Full Stack Developer", "Agentic AI Developer", "Generative AI Engineer", "LLM Systems Developer", "LLM Evaluations", "AI Security"],
+  "info": [
+    ["User", "Navneet Tripathi"],
+    ["Role", "AI / Backend / Full Stack"],
+    ["Branch", "B.Tech, Information Technology"],
+    ["College", "SGSITS, Indore | 2024-2028"],
+    ["Languages", "Java, Python, TypeScript, JavaScript"],
+    ["Backend", "Node.js, Express, FastAPI"],
+    ["Database", "PostgreSQL, MySQL, Redis, MongoDB"],
+    ["Agents", "LangGraph, LangChain, tool calling"],
+    ["RAG", "Embeddings, vector search, MCP"],
+    ["Models", "Gemini, Ollama, Hugging Face"],
+    ["Evaluate", "DeepEval, guardrails, LLM evals"],
+    ["Vision", "OpenCV, MediaPipe"],
+    ["Security", "JWT, RBAC, rate limiting"],
+    ["Realtime", "WebSockets, Socket.IO, SSE"],
+    ["Deploy", "Docker, AWS, Nginx, CI/CD"]
+  ]
+}

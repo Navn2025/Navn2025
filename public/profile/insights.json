@@ -1,0 +1,39 @@
+{
+  "username": "Navn2025",
+  "generated_at": "2026-10-26",
+  "public_repos": 77,
+  "followers": 9,
+  "stars": 7,
+  "forks": 6,
+  "languages": [
+    {
+      "name": "JavaScript",
+      "count": 29
+    },
+    {
+      "name": "Python",
+      "count": 18
+    },
+    {
+      "name": "TypeScript",
+      "count": 7
+    },
+    {
+      "name": "Jupyter Notebook",
+      "count": 5
+    },
+    {
+      "name": "Kotlin",
+      "count": 1
+    },
+    {
+      "name": "HTML",
+      "count": 1
+    },
+    {
+      "name": "SCSS",
+      "count": 1
+    }
+  ],
+  "language_repos": 62
+}

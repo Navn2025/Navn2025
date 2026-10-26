@@ -1,0 +1,13 @@
+Built-in imagegen edit prompt:
+
+Use case: precise-object-edit. Edit target: the supplied original 200x200 square
+photograph of Navneet wearing a blue kurta with folded arms in front of a beige
+decorative stone wall. Change ONLY the wall/background: apply a very light natural
+optical blur, comparable to Gaussian blur radius 1.5–2 pixels at the original
+200px image size. Keep the background present, with its beige color and
+architectural motifs still recognizable. Keep the man sharp and exactly unchanged:
+same real face, hair, skin, expression, pose, clothing, folds, hands and identity.
+Preserve the original square composition, camera framing, lighting and colors.
+Do not remove or replace the background. Do not crop, reframe, invent details,
+beautify, retouch the subject, or add any text. The result is for an ASCII portrait;
+just soften distracting wall detail slightly, do not make strong bokeh.

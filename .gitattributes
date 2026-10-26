@@ -1,0 +1,6 @@
+* text=auto eol=lf
+*.png binary
+
+# ASCII alignment and vendored logos intentionally preserve their whitespace.
+public/profile/portrait.txt -whitespace
+profile/icons/* -whitespace
