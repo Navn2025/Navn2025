@@ -46,14 +46,14 @@ My experience includes a software engineering internship focused on backend serv
 ## <img src="public/profile/icon-chart.svg" width="22" height="22" alt="" /> GitHub Insights
 
 <picture>
-  <source media="(max-width: 600px)" srcset="public/profile/insights-mobile.svg?v=20261026T191507Z" />
-  <img src="public/profile/insights.svg?v=20261026T191507Z" width="1000" alt="Navn2025's GitHub stats, contribution streaks and primary languages across non-fork repositories" />
+  <source media="(max-width: 600px)" srcset="public/profile/insights-mobile.svg?v=20261027T054152Z" />
+  <img src="public/profile/insights.svg?v=20261027T054152Z" width="1000" alt="Navn2025's GitHub stats, contribution streaks and primary languages across non-fork repositories" />
 </picture>
 
-<img src="public/profile/activity.svg?v=20261026T191507Z" width="1000" alt="Three-week moving average of contribution activity with an adaptive display threshold; tooltips preserve the real weekly counts" />
+<img src="public/profile/activity.svg?v=20261027T054152Z" width="1000" alt="Three-week moving average of contribution activity with an adaptive display threshold; tooltips preserve the real weekly counts" />
 
 <a href="https://github.com/Navn2025?tab=overview">
-  <img src="public/profile/contributions.svg?v=20261026T191507Z" width="1000" alt="Navn2025's real GitHub contribution calendar, refreshed daily" />
+  <img src="public/profile/contributions.svg?v=20261027T054152Z" width="1000" alt="Navn2025's real GitHub contribution calendar, refreshed daily" />
 </a>
 
 <div align="center">
