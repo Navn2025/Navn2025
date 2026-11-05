@@ -1,0 +1,42 @@
+name: Koi
+
+on:
+  schedule:
+    - cron: '20 0 * * *' # Daily at 00:20 UTC / 05:50 IST.
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/koi.yml'
+
+permissions:
+  contents: write
+
+# Serialize artwork commits with the existing profile refresh workflow.
+concurrency:
+  group: profile-contributions
+  cancel-in-progress: false
+
+jobs:
+  koi:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: yalongwastaken/git-koi@v1
+        with:
+          body: white
+          output-dir: koi
+      - name: Commit the koi if it changed
+        shell: bash
+        run: |
+          git add koi/koi.gif
+          if git diff --cached --quiet; then
+            echo 'The koi is unchanged; nothing to commit.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit --quiet --message 'chore: refresh profile koi'
+          git push --quiet

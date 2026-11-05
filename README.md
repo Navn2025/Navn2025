@@ -58,6 +58,10 @@ My experience includes a software engineering internship focused on backend serv
 
 <div align="center">
 
+<a href="https://github.com/yalongwastaken/git-koi">
+  <img src="koi/koi.gif" width="256" alt="My koi, grown from my public GitHub activity" />
+</a>
+
 **Learn deeply. Build relentlessly.**
 
 </div>
