@@ -1,7 +1,7 @@
 {
   "username": "Navn2025",
-  "generated_at": "2026-11-04",
-  "refreshed_at": "2026-11-04T07:00:17+00:00",
+  "generated_at": "2026-11-05",
+  "refreshed_at": "2026-11-05T07:27:46+00:00",
   "stats": {
     "total": 1078,
     "active_days": 136,
@@ -1847,6 +1847,11 @@
     },
     {
       "date": "2026-11-04",
+      "count": 0,
+      "level": 0
+    },
+    {
+      "date": "2026-11-05",
       "count": 0,
       "level": 0
     }
