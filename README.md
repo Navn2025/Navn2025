@@ -17,13 +17,19 @@
   <img src="public/profile/terminal-profile.svg?v=20261026-r22" width="1000" alt="Navneet Tripathi's detailed ASCII portrait and technical profile. B.Tech in Information Technology at SGSITS, Indore." />
 </picture>
 
+<div align="center">
+
+<a href="https://github.com/yalongwastaken/git-koi">
+  <img src="koi/koi.gif" width="384" alt="My koi, grown from my public GitHub activity" />
+</a>
+
+</div>
+
 ## <img src="public/profile/icon-user.svg" width="22" height="22" alt="" /> About Me
 
-I'm **Navneet Tripathi**, an Information Technology undergraduate at **SGSITS, Indore**, focused on AI engineering, backend systems, and full-stack development. I build applications that connect secure APIs, reliable data systems, and intelligent workflows, taking ideas from an initial prototype to deployed software.
+I'm **Navneet Tripathi**, an Information Technology undergraduate at **SGSITS, Indore**, building AI applications, backend systems, and full-stack products. I work with **FastAPI, Node.js, and SQL databases**, and build agent workflows using **LangGraph, LangChain, RAG, and MCP**.
 
-My backend work includes **FastAPI, Node.js, Express, PostgreSQL, MySQL, and Redis**, with experience in authentication, role-based access, caching, payments, and real-time communication. On the AI side, I develop agent workflows with **LangGraph and LangChain**, retrieval-augmented generation, MCP integrations, and tool calling. I also explore **LLM evaluations and AI security**, including guardrails, model reliability, observability, and the practical trade-offs between quality, latency, and cost.
-
-My experience includes a software engineering internship focused on backend services and computer-vision research through an **MPCST-funded project at SGSITS**, using OpenCV and MediaPipe for real-time feedback. My projects include **AutoBot, the SGSITS college platform, and EDU-AI**. Alongside building, I continue strengthening my foundations in data structures, system design, and machine learning.
+My experience spans a backend engineering internship and **MPCST-funded computer-vision research**. My projects include **AutoBot, the SGSITS college platform, and EDU-AI**, with a growing focus on **LLM evaluations and AI security**.
 
 ## <img src="public/profile/icon-code.svg" width="22" height="22" alt="" /> Tech Stack
 
@@ -57,10 +63,6 @@ My experience includes a software engineering internship focused on backend serv
 </a>
 
 <div align="center">
-
-<a href="https://github.com/yalongwastaken/git-koi">
-  <img src="koi/koi.gif" width="256" alt="My koi, grown from my public GitHub activity" />
-</a>
 
 **Learn deeply. Build relentlessly.**
 
