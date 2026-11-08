@@ -1,50 +1,15 @@
 {
   "username": "Navn2025",
-  "generated_at": "2026-11-07",
-  "refreshed_at": "2026-11-07T06:38:45+00:00",
+  "generated_at": "2026-11-08",
+  "refreshed_at": "2026-11-08T06:44:29+00:00",
   "stats": {
-    "total": 1088,
-    "active_days": 139,
-    "current_streak": 3,
+    "total": 1091,
+    "active_days": 140,
+    "current_streak": 4,
     "longest_streak": 15,
     "best_day": 251
   },
   "days": [
-    {
-      "date": "2025-11-02",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-03",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-04",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-05",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-06",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-07",
-      "count": 0,
-      "level": 0
-    },
-    {
-      "date": "2025-11-08",
-      "count": 0,
-      "level": 0
-    },
     {
       "date": "2025-11-09",
       "count": 0,
@@ -1862,7 +1827,12 @@
     },
     {
       "date": "2026-11-07",
-      "count": 3,
+      "count": 5,
+      "level": 1
+    },
+    {
+      "date": "2026-11-08",
+      "count": 1,
       "level": 1
     }
   ]
